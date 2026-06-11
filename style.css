@@ -1,5 +1,17 @@
+:root {
+    --semi-white: #e9fff9;
+    --blue-one:#9ed8db;
+    --blue-two: #467599;
+    --blue-three: #1d3354;
+    --red: #d64045;
+}
+
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color:var(--semi-white);
 }
 
 header {
@@ -10,61 +22,38 @@ header {
     padding: 1rem;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+header h1 {
+    display:block;
+    color:var(--blue-two);
 }
 
 header input  {
-    border:inset;
-}
-
-header img {
-    max-width: 1.5rem;
-    max-height: 1.5rem;
+    height:1.5rem;
+    border-radius:0.5rem;
+    border:var(--blue-two) solid 1px;
 }
 
 header button {
-    border: none;
-    border-radius: 100%;
+    border-radius:1rem;
+    border:none;
+    height:2.5rem;
+    font-weight:bold;
+    background-color:var(--blue-two);
+    color:var(--semi-white);
 }
 
 header button:hover {
-    cursor:pointer ;
+    cursor:pointer;
+    background-color:var(--blue-three);
+    color:var(--semi-white);
 }
 
-main {
-    display: flex;
-    align-items: center;
-    height: 10rem;
+.input {
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
-.atv {
-    display: flex;
-    text-align: center;
-    gap: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 25rem;
-}
-
-.botoes {
-    display: flex;
-    gap: 10px;
-}
-
-.botoes img{
-    max-width: 1.5rem;
-    max-height: 1.5rem;
-}
-
-.botoes button{
-    border: none;
-    border-radius: 10rem;
-}
-
-.botoes button:hover {
-    cursor:pointer ;
+.tarefa {
+    
 }
