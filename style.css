@@ -7,7 +7,10 @@
 }
 
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "gasoek one", sans-serif;
+    margin: 0;
+    padding: 0;
+
 }
 
 body {
@@ -24,20 +27,27 @@ header {
 
 header h1 {
     display:block;
+    font-weight: 300;
     color:var(--blue-two);
+    margin-bottom:1rem;
 }
 
 header input  {
     height:1.5rem;
     border-radius:0.5rem;
     border:var(--blue-two) solid 1px;
+    font-weight: 200;
+    color:var(--blue-three);
+    padding:0.5rem;
 }
 
 header button {
+    font-family:"alfa slab one", serif;
     border-radius:1rem;
+    padding:0.2rem;
     border:none;
     height:2.5rem;
-    font-weight:bold;
+    font: weight 300px;;
     background-color:var(--blue-two);
     color:var(--semi-white);
 }
@@ -48,12 +58,33 @@ header button:hover {
     color:var(--semi-white);
 }
 
-.input {
-    display:flex;
-    align-items:center;
-    justify-content:center;
+#tarefa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 15rem;
+    background-color:var(--blue-two)
 }
 
-.tarefa {
-    
+#tarefa h3{
+    font-weight: 300;
+    color:var(--semi-white);
+}
+
+#tarefa button {
+    padding:0rem;
+    background-color:var(--semi-white);
+    border-radius:100%;
+    border:2px solid var(--semi-white);
+
+}
+
+#tarefa img {
+    width:2rem;
+    height:1.8rem;
+}
+
+#edteexc {
+    display:flex;
+    align-items:center;
 }
